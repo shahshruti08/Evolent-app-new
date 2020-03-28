@@ -1,0 +1,42 @@
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+
+    <div class="form-group col-md-6">
+      <label for="name">
+        Name
+      </label>
+      <input id="name" class="form-control" type="text" formControlName="name">
+      <span *ngIf="!checkoutForm.get('name').valid && checkoutForm.get('name').touched">Please enter Name !!!</span>  
+    </div>
+  
+    <div class="form-group col-md-6">
+      <label for="address">
+        Address
+      </label>
+      <input id="address" class="form-control" type="text" formControlName="address">
+      <span *ngIf="!checkoutForm.get('address').valid && checkoutForm.get('address').touched">Please enter proper address !!!</span>  
+      
+    </div>
+
+    <div class="form-group col-md-6">
+        <label for="mobile">
+          Mobile No.
+        </label>
+        <input id="mobile" class="form-control" type="text" formControlName="mobile">
+        <span *ngIf="!checkoutForm.get('mobile').valid && checkoutForm.get('mobile').touched">Please enter proper mobile no. !!!</span>  
+      </div>
+
+    <div class="form-group col-md-6">
+        <label for="email">
+          Email
+        </label>
+        <input id="email" class="form-control" type="text" formControlName="email">
+        <span *ngIf="!checkoutForm.get('email').valid && checkoutForm.get('email').touched">Please enter proper email !!!</span>  
+    </div>
+    <div class="form-group col-md-6">
+        <button class="btn btn-primary mb- form-control2" type="submit" [disabled]="!checkoutForm.valid">Add To List</button>
+    </div>
+    <div class="form-group col-md-6">
+      <button mat-raised-button color="primary" (click)="back()">Back</button>
+    </div>
+
+  </form>
