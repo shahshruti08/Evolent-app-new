@@ -21,6 +21,8 @@ Angular CLI
 Please download Mongodb.zip from the link : https://drive.google.com/file/d/1vl7NnQ-UMXpTIbOOIBQqAj0uifFBGPMN/view?usp=sharing
 Unzip the folder
 Keep this downloaded mongodb folder inside project evolent/MongoDB
+# Please refer folderStructure.jpg to see the folder structure.
+
 # Steps to Run
 Open command prompt.
 Go to project evolent
